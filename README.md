@@ -1,2 +1,2 @@
-# moment_arm_visulization
+# Moment Arm Visulization
 Interactively generate a moment arm diagram
