@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Moment Arm Visualization</title>
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <script src="https://unpkg.com/konva@7.1.4/konva.min.js"></script>
+    <link href="./css/force_arm.css" rel="stylesheet">
+</head>
+<body data-gr-c-s-loaded="true">
+    <div class="container">
+        <div class="show-header">
+            <div class="show-header-center">力臂图</div>
+        </div>
+        <div class="showcase">
+            <div id='imgInput'>
+                上传图片: <input type="file" accept="image/*" onchange="onFileSelected(event)" value="chose picture">
+            </div>
+            <div id='controlPanel' hidden>
+                <button onclick="drawPivot()">支点</button>
+                <button onclick="drawForceLine()">力的作用线</button>
+                <button onclick="drawForceArm()">画力臂</button>
+                <button onclick="clearForceArm()">清除</button>
+            </div>
+            <div id="canvasContainer"></div>
+        </div>
+        <div class="show-footer"> create by Weiqing Li</div>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script src="force_arm.js"></script>
+        <script src="img_upload.js"></script>
+    </div>
+</body>
+</html>
